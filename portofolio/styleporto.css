@@ -1,0 +1,257 @@
+:root {
+            --bg-dark: #070707;
+            --card-dark: #111111;
+            --purple-accent: #a855f7;
+            --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            --text-white: #ffffff;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-white);
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .navbar-brand { font-family: 'Syne', sans-serif; }
+
+        /* --- Navbar --- */
+
+        .navbar-brand {
+            font-family: 'Syne', sans-serif;
+            font-weight: 800;
+        }
+        
+        .navbar {
+            background: rgba(7, 7, 7, 0.8) !important;
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 15px 0;
+            transition: 0.3s;
+        }
+
+        .navbar .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-social, .nav-logo, .nav-menu {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-social { justify-content: center; gap: 20px; }
+        .nav-logo { justify-content: center; }
+        .nav-menu { justify-content: flex; }
+
+        .social-icons{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.social-icons a{
+    color: var(--text-white);
+    font-size:18px;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    color: var(--purple-accent);
+    transform: translateY(-2px);
+}
+
+        .navbar-nav {
+            display: flex;
+            flex-direction: row !important;
+            gap: 40px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-link {
+            color: var(--text-white) !important;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.3s ease; /* Mengatur durasi animasi agar halus */
+            text-decoration: none !important; /* Memastikan tidak ada garis bawah */
+            
+        }
+
+
+        /* Menghilangkan garis bawah pada semua link navigasi */
+.navbar-brand, 
+.nav-link, 
+.navbar-brand:hover, 
+.nav-link:hover {
+    text-decoration: none !important;
+    transform: translateY(-5px); /* Efek animasi terangkat ke atas */
+}
+
+/* Efek Hover: Warna Ungu + Terangkat */
+.nav-link:hover, 
+.nav-social a:hover {
+    color: var(--purple-accent) !important;
+    transform: translateY(-8px) !important; /* Efek terangkat lebih terasa */
+}
+
+
+        /* --- Portfolio Article Section --- */
+        
+        .portfolio-header {
+            padding: 50px 0 60px;
+            text-align: center;
+            background: radial-gradient(circle at top, rgba(168, 85, 247, 0.15), transparent 70%);
+        }
+
+        .portfolio-item {
+            background: var(--card-dark);
+            border-radius: 30px;
+            margin-bottom: 50px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: 0.3s;
+        }
+
+        .portfolio-item:hover {
+            border-color: var(--purple-accent);
+            transform: translateY(-5px);
+        }
+
+        .portfolio-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .portfolio-content {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .tag {
+            display: inline-block;
+            background: var(--accent-gradient);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .btn-detail {
+            margin-top: 20px;
+            color: var(--purple-accent);
+            text-decoration: none;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            padding: 50px 0;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            color: var(--text-dim);
+        }
+
+        @media (max-width: 991px) {
+            .portfolio-content { text-align: center; align-items: center; }
+            .portfolio-img { margin-bottom: 20px; height: 250px; }
+        }
+
+
+/* FLOATING WHATSAPP */
+
+.whatsapp-float{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:55px;
+    height:55px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:26px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    z-index:999;
+    transition:0.3s;
+    text-decoration:none;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.1);
+    box-shadow:0 15px 30px rgba(37,211,102,0.4);
+}
+
+.whatsapp-float{
+    animation: whatsappPulse 2s infinite;
+}
+
+@keyframes whatsappPulse{
+
+    0%{
+        box-shadow:0 0 0 0 rgba(37,211,102,0.6);
+    }
+
+    70%{
+        box-shadow:0 0 0 15px rgba(37,211,102,0);
+    }
+
+    100%{
+        box-shadow:0 0 0 0 rgba(37,211,102,0);
+    }
+
+}
+
+/* BACK TO TOP BUTTON */
+
+.back-to-top{
+    position:fixed;
+    bottom:25px;
+    left:25px;
+    width:50px;
+    height:50px;
+    background:var(--accent-gradient);
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    text-decoration:none;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    opacity:0;
+    visibility:hidden;
+    transition:0.3s;
+    z-index:999;
+}
+
+.back-to-top:hover{
+    transform:translateY(-5px);
+}
+
+.back-to-top.show{
+    opacity:1;
+    visibility:visible;
+}
