@@ -1,235 +1,333 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV & Portfolio | HENDRI</title>
     
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Portfolio | Hendriansyah Pasali</title>
-    
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/steller.css">
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
-<body data-spy="scroll" data-target=".navbar">
+<body>
 
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <div class="nav-social">
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/hendriansyah-pasali-647766168"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Rakito-ui"><i class="fab fa-github"></i></a>
-                </div>
+    <!-- ==============================================
+         NAVIGATION BAR
+         ============================================== -->
+    <nav class="navbar">
+        <!-- Left Side: Burger Menu for Mobile -->
+        <div class="nav-left">
+            <div class="burger-menu" id="burgerMenu" aria-label="Open Mobile Menu">
+                <i class="fas fa-bars"></i>
             </div>
-            <div class="nav-logo">
-                <a class="navbar-brand" href="#home" style="color: #fff; font-size: 1.6rem;">HAPPY<span style="color: var(--purple-accent);">.</span></a>
-            </div>
-            <div class="nav-menu">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
-                </ul>
-            </div>
+        </div>
+        
+        <!-- Center: Brand Logo/Name -->
+        <div class="nav-center">
+            <h1 class="brand-logo">HAPPY</h1>
+        </div>
+        
+        <!-- Right Side: Social Media Links -->
+        <div class="nav-right">
+            <a href="https://www.linkedin.com/in/hendriansyah-pasali-647766168" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Rakito-ui" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
         </div>
     </nav>
 
-    <header class="header" id="home">
-        <img src="picture/profilhendri.jpg" class="profile-img" alt="Foto">
-        <h6 class="subtitle">Beginner Creative Developer</h6>
-        <h1 class="title">Hendri</h1>
-        <p class="text-dim" style="max-width: 600px; margin-bottom: 40px;">Helping businesses build iconic digital identities through minimalist design and modern technology.</p>
-        <a href="#contact" class="btn-main text-decoration-none">let's discuss</a>
-    </header>
+    <!-- ==============================================
+         SLIDE-OUT SIDEBAR MENU (MOBILE)
+         ============================================== -->
+    <div class="sidebar" id="sidebar">
+        <!-- Close Button -->
+        <div class="close-btn" id="closeBtn" aria-label="Close Mobile Menu">
+            <i class="fas fa-times"></i>
+        </div>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
+    
+    <!-- Overlay for Sidebar -->
+    <div class="overlay" id="overlay"></div>
 
-    <section id="about" class="section">
+
+    <!-- ==============================================
+         MAIN HERO SECTION
+         ============================================== -->
+    <section id="hero" class="hero">
+        <div class="glow-bg"></div>
+        <div class="hero-content">
+            <!-- Profile Image -->
+            <div class="profile-img-container">
+                <img src="picture/profilhendri.jpg" alt="Profile" class="profile-img">
+            </div>
+            
+            <!-- Headline & Tagline -->
+            <h1 class="hero-name">HENDRI</h1>
+            <p class="hero-tagline">Helping businesses build iconic digital identities through minimalist design 
+                and modern technology.</p>
+                
+            <!-- Call to Action Button -->
+            <a href="https://wa.me/+6288744931419" target="_blank" class="btn btn-primary">Let's Discuss</a>
+        </div>
+    </section>
+
+
+    <!-- ==============================================
+         ABOUT ME SECTION
+         ============================================== -->
+    <section id="about" class="about section-padding">
         <div class="container">
-            <div class="about-box">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 mb-5 mb-lg-0">
-                        <h2 class="mb-4">About Me</h2>
-                        <p class="text-dim">I am a highly dedicated designer and developer. I only started working on web and UI/UX development in 2026, 
-                            but I've been learning a bit about web and design since 2025. 
-                            I also work as a plastic molding machine operator, but I remain passionate about continuing my digital transformation. 
-                            I also occasionally receive calls for computer assembly and troubleshooting.</p>
-                        <p class="text-dim">Every pixel plays a crucial role in building user trust. I combine aesthetics with functionality for the best results.</p>
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-content">
+                <!-- Biography -->
+                <p class="bio">
+                    Passionate Front-End Web Developer and UI/UX Designer with a knack for creating intuitive, dynamic user experiences. 
+                    Every pixel plays a crucial role in building user trust. I combine aesthetics with functionality for the best results.
+                </p>
+                
+                <!-- Timelines for Experience & Education -->
+                <div class="timeline-container">
+                    
+                    <!-- Left Column: Work Experience -->
+                    <div class="timeline-column">
+                        <h3>Work Experience</h3>
+                        
+                        <div class="timeline-item timeline-card">
+                            <h4>Freelance Computer Technical Support</h4>
+                            <span class="date">2026 - present</span>
+                            <p><!-- Add brief description here if needed --></p>
+                        </div>
+                        
+                        <div class="timeline-item timeline-card">
+                            <h4>Freelance Web and Design</h4>
+                            <span class="date">2025 - present</span>
+                            <p><!-- Add brief description here if needed --></p>
+                        </div>
+                        
+                        <div class="timeline-item timeline-card">
+                            <h4>Cap Molding Machine Operator</h4>
+                            <span class="date">2023 - present</span>
+                            <p><!-- Add brief description here if needed --></p>
+                        </div>
+                        
+                        <div class="timeline-item timeline-card">
+                            <h4>Mechanic Helper (Internship)</h4>
+                            <span class="date">2022-2023</span>
+                            <p><!-- Add brief description here if needed --></p>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <h4 class="mb-4 text-center text-lg-left">Career Journey</h4>
-                        <div class="career-item">
-                            <h5>Computer Technical support</h5>
-                            <p class="small text-primary">2026 - Now | self-taught</p>
+                    
+                    <!-- Right Column: Training & Certificates -->
+                    <div class="timeline-column">
+                        <h3>Training and Certificates</h3>
+                        
+                        <div class="timeline-item timeline-card">
+                            <h4>Japanese language e-learning</h4>
+                            <p><!-- Add brief description here if needed --></p>
                         </div>
-                        <div class="career-item">
-                            <h5>Freelance web and desain</h5>
-                            <p class="small text-primary">2025 - Now | self-taught</p>
+                        
+                        <div class="timeline-item timeline-card">
+                            <h4>Figma for UI/UX Design</h4>
+                            <p><!-- Add brief description here if needed --></p>
                         </div>
-                        <div class="career-item">
-                            <h5>Cap Molding Machine Operator</h5>
-                            <p class="small text-primary">2023 - Now | PT Tirta Fresindo jaya</p>
+                        
+                         <div class="timeline-item timeline-card">
+                            <h4>Short class Web Development Front-end</h4>
+                            <p><!-- Add brief description here if needed --></p>
                         </div>
-                        <div class="career-item">
-                            <h5>mechanic helper (internship)</h5>
-                            <p class="small text-primary">2022 - 2023 | PT Tonasa Lines</p>
+                        
+                        <div class="timeline-item timeline-card">
+                            <h4>Maintenance and repair of mechanical equipment</h4>
+                            <p><!-- Add brief description here if needed --></p>
                         </div>
+                        
+                        <div class="timeline-item timeline-card">
+                            <h4>Increase Productivity with Microsoft Excel</h4>
+                            <p><!-- Add brief description here if needed --></p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==============================================
+         SERVICES SECTION
+         ============================================== -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <h2 class="section-title">My Services</h2>
+            
+            <div class="grid-3">
+                <!-- Service 1: Front-End -->
+                <div class="service-card">
+                    <i class="fas fa-code service-icon"></i>
+                    <h3>Front-End Development</h3>
+                    <p>Building responsive, performant, and accessible websites using modern web technologies.</p>
+                </div>
+                
+                <!-- Service 2: UI/UX Design -->
+                <div class="service-card">
+                    <i class="fas fa-paint-brush service-icon"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Crafting beautiful, user-friendly digital interfaces that solve real problems.</p>
+                </div>
+                
+                <!-- Service 3: Tech Support -->
+                <div class="service-card">
+                    <i class="fas fa-laptop-medical service-icon"></i>
+                    <h3>Computer Technical Support</h3>
+                    <p>Troubleshooting, assembling, and maintaining high-performance computer systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==============================================
+         PORTFOLIO SECTION
+         ============================================== -->
+    <section id="portfolio" class="portfolio section-padding">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            
+            <div class="grid-3">
+                <!-- Portfolio Card 1 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="portfolio-info">
+                        <span class="category"></span>
+                        <h3>Front-End Projects</h3>
+                        <p>Modern and Profesional Website</p>
+                        <a href="https://sites.google.com/view/front-end-project-hendri?usp=sharing" target="_blank" class="portfolio-btn">View Projects</a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Card 2 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="portfolio-info">
+                        <span class="category"></span>
+                        <h3>UI/UX Design</h3>
+                        <p>Design quality determines the future.</p>
+                        <a href="https://drive.google.com/drive/folders/1vn-aRSHauVqRK579OKoDyxmrJ8_ttyNB?usp=drive_link" target="_blank" class="portfolio-btn">View Projects</a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Card 3 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-img" style="background-image: url('picture/computer1.jpg');"></div>
+                    <div class="portfolio-info">
+                        <span class="category"></span>
+                        <h3>Computer Technical Support</h3>
+                        <p>Assembling computers and troubleshooting</p>
+                        <a href="https://drive.google.com/drive/folders/1jRQvjFHmJrfeahYULSBNTN-hsMkwXrtK?usp=drive_link" target="_blank" class="portfolio-btn">View Projects</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="service" class="section">
-        <div class="container text-center">
-            <h2 class="section-service">My Service</h2>
-            <div class="row w-100">
-                <div class="col-md-4 mb-4">
-                    <div class="custom-card">
-                        <div class="icon-box"><i class="ti-settings"></i></div>
-                        <h4>Computer Technical support</h4>
-                        <p class="text-dim small">Performing the computer assembly process until it is ready to use and troubleshooting any computer problems.
-                        </p>
+    <!-- Modal for Portfolio (Currently handled by JS, but kept for future scale) -->
+    <div class="modal" id="portfolioModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <span class="modal-category" id="modalCategory">Category</span>
+            <h2 id="modalTitle">Project Title</h2>
+            <p id="modalDesc">Project description goes here...</p>
+        </div>
+    </div>
+
+
+    <!-- ==============================================
+         CONTACT SECTION
+         ============================================== -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            
+            <div class="contact-form-container">
+                <!-- Form routes to WhatsApp via JS -->
+                <form id="contactForm" onsubmit="sendWhatsApp(event)">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
                     </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="custom-card">
-                        <div class="icon-box"><i class="ti-rocket"></i></div>
-                        <h4>Web Development</h4>
-                        <p class="text-dim small">Build responsive websites with maximum performance and the latest technology.</p>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email Address" required>
                     </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="custom-card">
-                        <div class="icon-box"><i class="ti-crown"></i></div>
-                        <h4>UI/UX Design</h4>
-                        <p class="text-dim small">Creating consistent, clean, and user-oriented application visuals.</p>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
                     </div>
-                </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Now</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <section id="portfolio" class="section">
-    <div class="container">
 
-        <h2 class="section-title">My Portfolio</h2>
-        <p class="section-subtitle">Some projects I have worked on</p>
+    <!-- ==============================================
+         FLOATING ACTION BUTTONS
+         ============================================== -->
+         
+    <!-- Back to Top Button (Bottom Left) -->
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Scroll back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
-        <div class="portfolio-grid">
+    <!-- Floating WhatsApp Button (Bottom Right) -->
+    <a href="https://wa.me/6288744931419" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-            <div class="portfolio-card">
-                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1000" alt="">
-                <div class="portfolio-info">
-                    <h4>Website project</h4>
-                    <p>Modern and professional website</p>
-                    <a href="portofolio/websiteproject.html" class="portfolio-btn">View Projects</a>
+
+    <!-- ==============================================
+         FOOTER SECTION
+         ============================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Footer Brand Logo -->
+                <div class="footer-logo">HAPPY</div>
+                
+                <!-- Inline Links -->
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <!-- Footer Social Media -->
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/hendriansyah-pasali-647766168" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Rakito-ui" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                 </div>
             </div>
-
-            <div class="portfolio-card">
-                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1000" alt="">
-                <div class="portfolio-info">
-                    <h4>UI Mobile App</h4>
-                    <p>Modern mobile application design</p>
-                    <a href="portofolio/UImobileapp.html" class="portfolio-btn">View Projects</a>
-                </div>
-            </div>
-
-            <div class="portfolio-card">
-                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000" alt="">
-                <div class="portfolio-info">
-                    <h4>Computer technical support</h4>
-                    <p>assembling computers and troubleshooting</p>
-                    <a href="portofolio/computertechsupport.html" class="portfolio-btn">View Projects</a>
-                </div>
-            </div>
-
+            
+            <p class="copyright">&copy; 2026 Happy. All rights reserved.</p>
         </div>
+    </footer>
 
-    </div>
-</section>
-
-    <section id="contact" class="section" style="background:#0a0a0a;">
-    <div class="container">
-
-        <h2>Contact Me</h2>
-
-        <form class="contact-form">
-
-            <div class="form-group">
-                <input type="text" id="name" class="form-control" placeholder="Name">
-            </div>
-
-            <div class="form-group">
-                <input type="email" id="email" class="form-control" placeholder="Email">
-            </div>
-
-            <div class="form-group">
-                <textarea id="message" class="form-control" rows="5" placeholder="Message"></textarea>
-            </div>
-
-            <button type="button" onclick="sendToWhatsApp()" class="btn-main w-100">
-             send now
-            </button>
-
-        </form>
-
-    </div>
-</section>
-
-
-<!--tombol whatsaap mengambang-->
-<a href="https://wa.me/6288744931419" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-</a>
-
-<!--tombol back to top-->
-<a href="#" class="back-to-top">
-    <i class="fas fa-arrow-up"></i>
-</a>
-
-
-<footer class="footer">
-    <div class="container">
-
-        <div class="footer-content">
-
-            <div class="footer-brand">
-                <h3>HAPPY<span>.</span></h3>
-                <p>Building modern digital solutions.</p>
-            </div>
-
-            <div class="footer-links">
-                <h4>Menu</h4>
-                <a href="#home">Home</a>
-                <a href="#about">About Me</a>
-                <a href="#service">Service</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
-            </div>
-
-            <div class="footer-social">
-                <h4>Follow Me</h4>
-                <div class="social-footer">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/hendriansyah-pasali-647766168"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Rakito-ui"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-            <p>© 2026 HAPPY. All Rights Reserved.</p>
-        </div>
-
-    </div>
-</footer>
-
-<script src="script.js"></script>
-
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
 </body>
 </html>
